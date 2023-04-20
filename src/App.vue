@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <backgroundBlock id="background"/>
+    <headerBlock/>
+    <postsSection/>
+    <readMoreBlock id="readMoreBlock" />
+    <featuredStories />
+    <footerBlock />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import backgroundBlock from "@/components/background-block.vue";
+import headerBlock from "@/components/header-block.vue";
+import postsSection from "@/components/posts-section.vue";
+import readMoreBlock from "@/components/read-more-block.vue";
+import featuredStories from "@/components/featured-stories.vue";
+import footerBlock from "@/components/footer-block.vue";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    backgroundBlock,
+    headerBlock,
+    postsSection,
+    readMoreBlock,
+    featuredStories,
+    footerBlock
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #readMoreBlock {
+    margin-bottom: 185px;
+  }
+  @import 'css/global_styles.css';
 </style>

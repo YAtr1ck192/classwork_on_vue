@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "mr";
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "lr";
+    src: url(../assets/fonts/Lato-Regular.ttf);
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+.bigger-container {
+    width: 940px;
+    margin: 0 auto;
+}
+.block-title {
+    color: #333;
+    font-family: "mr";
+}
+.author-desc {
+    margin-left: 14px;
+}
+.author-desc .author-name {
+    font-size: 18px;
+    font-family: "mr";
+    color: white;
+}
+.author-desc .date-add {
+    font-size: 13px;
+    font-family: "lr";
+    color: white;
+}
+.article-a {
+    color: #8D4FDB;
+    text-decoration: none;
+    font-family: "lr";
+    font-size: 17px;
+    width: 660px;
+}
